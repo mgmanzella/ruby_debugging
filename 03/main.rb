@@ -23,6 +23,8 @@ class Information
     @version = version
     @workshop = workshop
   end
+
+  attr_reader :language, :version, :workshop
 end
 
 information = Information.new('Ruby', '2.6.2', 'Ruby debugging')

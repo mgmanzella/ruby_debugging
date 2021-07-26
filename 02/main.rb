@@ -19,13 +19,15 @@ class Information
   def initialize(language, version, workshop)
     @language = language
     @version = version
-    workshop = workshop
+    @workshop = workshop
   end
 
+  attr_reader :language, :version, :workshop
+
   def to_s
-    puts "Language: #{@language}"
-    puts "Version: #{@version}"
-    puts "Workshop: #{@workshop}"
+    puts "Language: #{language}"
+    puts "Version: #{version}"
+    puts "Workshop: #{workshop}"
   end
 end
 
